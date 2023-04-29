@@ -11,7 +11,7 @@ arch=$(uname -m)
 
 # Install Docker
 echo "Installing Docker..."
-if [[ $arch == "x86_64" ]] || [[ $arch == "amd64" ]]; then
+if [[ $arch == "x86_64" ]] || [[ $arch == "amd64" ]] || [[ $arch == "aarch64" ]]; then
   curl -fsSL https://get.docker.com -o get-docker.sh
   sh get-docker.sh
   rm get-docker.sh
