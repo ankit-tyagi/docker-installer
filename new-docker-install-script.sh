@@ -63,4 +63,4 @@ install_docker_app "Caddy" "docker run -d --name caddy --restart always -p 80:80
 install_docker_app "Portainer CE" "docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce"
 
 # Install Portainer Agent
-install_docker_app "Portainer Agent" "docker run -d --name portainer_agent --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes
+install_docker_app "Portainer Agent" "docker run -d --name portainer_agent --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/docker/volumes"
